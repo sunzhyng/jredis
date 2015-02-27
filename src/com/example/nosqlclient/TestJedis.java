@@ -30,7 +30,7 @@ public class TestJedis {
     public static void setUpBeforeClass() throws Exception {
         List<JedisShardInfo> shards = Arrays.asList(
                 new JedisShardInfo("192.168.1.106",6379),
-                new JedisShardInfo("192.168.1.106",6379)); //使用相同的ip:port,仅作测试
+                new JedisShardInfo("192.168.1.106",6379)); 
 
 
         jedis = new Jedis("192.168.1.106"); 
